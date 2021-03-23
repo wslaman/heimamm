@@ -1,0 +1,213 @@
+body {
+  min-width: 320px;
+  max-width: 750px;
+  margin: 0 auto;
+  background-color: #F2F4F7;
+}
+* {
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
+}
+/*
+当屏幕大于750px，html字体大小就不变化
+将屏幕分成20等分
+*/
+@media screen and (min-width: 750px) {
+  html {
+    font-size: 37.5px !important;
+  }
+}
+a {
+  text-decoration: none;
+  color: #707070;
+}
+.wrap {
+  background-color: #fff;
+  padding-bottom: 1.147rem;
+}
+.header {
+  height: 2.133rem;
+  border-bottom: 1px solid #EAEAEA;
+  text-align: center;
+  line-height: 2.133rem;
+  font-size: 0.933rem;
+  color: #1C1C1C;
+}
+.nav {
+  display: flex;
+  flex-flow: row wrap;
+  margin-top: 1.173rem;
+  margin-bottom: 1.6rem;
+}
+.nav .item {
+  flex: 33.3%;
+  display: flex;
+  flex-direction: column;
+  /*水平居中*/
+  align-items: center;
+}
+.nav .item img {
+  height: 3.707rem;
+  width: 3.707rem;
+}
+.nav .item span {
+  font-size: 0.667rem;
+}
+.nav .item:nth-child(-n+3) {
+  margin-bottom: 1.76rem;
+}
+/*go*/
+.go {
+  height: 4.053rem;
+  margin: 0 0.267rem 0 0.48rem;
+}
+.content {
+  padding: 1.067rem 0.64rem;
+  margin-top: 0.267rem;
+  background-color: #fff;
+}
+.content .con-hd {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  height: 1.013rem;
+  line-height: 1.013rem;
+  margin-bottom: 0.907rem;
+}
+.content .con-hd h4 {
+  margin: 0;
+  margin-left: 1.493rem;
+  font-size: 0.747rem;
+  color: #333333;
+}
+.content .con-hd h4::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1.013rem;
+  height: 1.013rem;
+  background: url(../icons/i2.png) no-repeat;
+  background-size: 1.013rem 1.013rem;
+}
+.content .con-hd a {
+  font-size: 0.587rem;
+  color: #999999;
+}
+.get_job_focus {
+  /*
+  让两边箭头不脱离父盒子
+  */
+  position: relative;
+}
+.get_job_focus .swiper-container {
+  /*根据需求把宽度定为540px*/
+  width: 14.4rem;
+  height: 100%;
+}
+.get_job_focus .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  transition: 300ms;
+  transform: scale(0.8);
+  opacity: 0.3;
+}
+.get_job_focus .swiper-slide a {
+  width: 9.013rem;
+  height: 10.027rem;
+}
+.get_job_focus .swiper-slide a img {
+  width: 100%;
+  height: 100%;
+}
+.get_job_focus .swiper-slide p {
+  width: 9.013rem;
+  font-size: 0.667rem;
+  color: #333;
+  margin-top: 0.64rem;
+}
+.get_job_focus .swiper-slide-active,
+.get_job_focus .swiper-slide-duplicate-active {
+  transform: scale(1);
+  z-index: 1;
+  opacity: 1;
+}
+.get_job_focus .swiper-button-next,
+.get_job_focus .swiper-button-prev {
+  color: #000;
+}
+.study_con {
+  padding-bottom: 3.733rem;
+}
+.study .swiper-container {
+  width: 100%;
+  height: 100%;
+  padding: 0.267rem;
+}
+.study .swiper-slide {
+  font-size: 18px;
+  background: #fff;
+  width: 7.733rem;
+  height: 9.067rem;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 0.267rem rgba(0, 0, 0, 0.3);
+}
+.study .swiper-slide h5 {
+  font-size: 0.747rem;
+  color: #333;
+  margin: 0.533rem 0;
+  font-weight: 400;
+  padding: 0 0.267rem;
+}
+.study .swiper-slide p {
+  font-size: 0.693rem;
+  color: #FF4400;
+  padding: 0 0.267rem;
+}
+.footer {
+  position: fixed;
+  display: flex;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  height: 2.933rem;
+  width: 100%;
+  max-width: 750px;
+  padding-top: 0.507rem;
+  border-top: 0.027rem solid #ccc;
+  background-color: #fff;
+  z-index: 1;
+}
+.footer a {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer a img {
+  width: 1.04rem;
+  height: 1.093rem;
+}
+.footer a span {
+  font-size: 0.587rem;
+  margin-top: 0.293rem;
+}
+.footer a:nth-child(1) span {
+  color: #52C4F0;
+}
